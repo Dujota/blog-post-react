@@ -6,10 +6,16 @@ import Post from './App';
 
 var post = {
   title: "I will learn React no matter what!",
-  author: "Papa Sanch",
+  author: [
+    "Papa Sanch",
+    "Tiny T-Rex",
+    "Joe Blo"
+  ],
   body: "One Step at a time, with no stone unturned!",
   comments: [
-    "First!", "Great post dude!", "Hire this guy right meow!"
+    "First!",
+    "Great post dude!",
+    "Hire this guy right meow!"
   ]
 }
 

@@ -16,10 +16,10 @@ class Post extends Component {
         <h1 className="title">
           {this.props.title}
         </h1>
-        <p className="author">by {this.props.author}</p>
+        <p className="author">Written by: {this.props.author}</p>
         <p className="body">{this.props.body}</p>
         <h3 className="comments">Comments:</h3>
-        <p>{allComments}</p>
+        {allComments}
         {/* <Comments body={this.props.comments[0]} /> */}
 
       </div>
