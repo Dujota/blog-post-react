@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+// Load in the Comment Component
+import Comment from './Comments.js'
 
 class Post extends Component {
   render() {
