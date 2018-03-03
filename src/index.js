@@ -13,7 +13,12 @@ var post = {
   ]
 }
 
-ReactDOM.render(<Post
-  title={post.title} author={post.author} body={post.body} comments={post.comments}
-/>, document.getElementById('root'));
-// registerServiceWorker();
+ReactDOM.render(
+  <Post
+    title={post.title}
+    author={post.author}
+    body={post.body}
+    comments={post.comments}
+  />,
+  document.getElementById('root'));
+  // registerServiceWorker();
