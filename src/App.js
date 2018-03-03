@@ -13,11 +13,15 @@ class Post extends Component {
       <Comments body={this.props.comments[2]} />
     ];
 
-    let allAuthors = [
-      <Authors body={this.props.authors[0]} />,
-      <Authors body={this.props.authors[1]} />,
-      <Authors body={this.props.authors[2]} />,
-    ];
+    // let allAuthors = [
+    //   <Authors body={this.props.authors[0]} />,
+    //   <Authors body={this.props.authors[1]} />,
+    //   <Authors body={this.props.authors[2]} />,
+    // ];
+
+    let allAuthors = this.props.authors.map((author, index) => (
+      < Authors body={author} key={index} />
+    ))
 
     return (
       <div id="post">
