@@ -10,7 +10,7 @@ class Comments extends Component {
   }
 }
 
-export default Comment
+export default Comments
 
 
 

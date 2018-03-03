@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 
 // Load in the Comment Component
-import Comment from './Comments.js'
+import Comments from './Comments.js';
 
 class Post extends Component {
   render() {
@@ -14,8 +14,8 @@ class Post extends Component {
         <p className="author">by {this.props.author}</p>
         <p className="body">{this.props.body}</p>
         <h3 className="comments">Comments:</h3>
-        <p>{this.props.comments[0]}</p>
 
+        <Comments body={this.props.comments[0]} />
 
       </div>
     );
