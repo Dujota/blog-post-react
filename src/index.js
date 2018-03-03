@@ -6,7 +6,7 @@ import Post from './App';
 
 var post = {
   title: "I will learn React no matter what!",
-  author: [
+  authors: [
     "Papa Sanch",
     "Tiny T-Rex",
     "Joe Blo"
@@ -22,7 +22,7 @@ var post = {
 ReactDOM.render(
   <Post
     title={post.title}
-    author={post.author}
+    authors={post.authors}
     body={post.body}
     comments={post.comments}
   />,
