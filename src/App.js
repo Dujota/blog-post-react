@@ -6,6 +6,11 @@ import Comments from './Comments.js';
 
 class Post extends Component {
   render() {
+    let allComments = [
+      <Comments body={this.props.comments[0]} />,
+      <Comments body={this.props.comments[1]} />,
+      <Comments body={this.props.comments[2]} />
+    ];
     return (
       <div id="post">
         <h1 className="title">
@@ -14,8 +19,8 @@ class Post extends Component {
         <p className="author">by {this.props.author}</p>
         <p className="body">{this.props.body}</p>
         <h3 className="comments">Comments:</h3>
-
-        <Comments body={this.props.comments[0]} />
+        <p>{allComments[2]}</p>
+        {/* <Comments body={this.props.comments[0]} /> */}
 
       </div>
     );
