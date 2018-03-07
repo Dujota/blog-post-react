@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 
-// Load in the Comment Component
+// Load in the separate Component Files 
 import Comments from './Comments.js';
 import Authors from './Authors.js';
 
@@ -35,7 +35,7 @@ class Post extends Component {
           {this.props.title}
         </h1>
         {allAuthors}
-        <p className="body">{this.props.body}</p>
+        <p className="postBody">{this.props.postBody}</p>
         <h3 className="comments">Comments:</h3>
         {allComments}
         {/* <Comments body={this.props.comments[0]} /> */}

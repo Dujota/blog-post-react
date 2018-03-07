@@ -9,9 +9,9 @@ var post = {
   authors: [
     "Papa Sanch",
     "Tiny T-Rex",
-    "Joe Blo"
+    "Joe Blake"
   ],
-  body: "One Step at a time, with no stone unturned!",
+  postBody: "One Step at a time, with no stone unturned!",
   comments: [
     "First!",
     "Great post dude!",
@@ -23,7 +23,7 @@ ReactDOM.render(
   <Post
     title={post.title}
     authors={post.authors}
-    body={post.body}
+    postBody={post.postBody}
     comments={post.comments}
   />,
   document.getElementById('root'));
